@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, MapPin, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-function AnimatedSection({ children }: { children: React.ReactNode }) {
+function AnimatedSection({ children }) {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
